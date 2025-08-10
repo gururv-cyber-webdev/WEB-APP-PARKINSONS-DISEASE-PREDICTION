@@ -22,7 +22,7 @@ CORS(app)
 model = load_model('./model/parkinsons_model.h5')
 scaler = joblib.load('./model/scaler.pkl')
 
-client = MongoClient("mongodb+srv://kannanguru2004:trpOKY0Lp4BTwA0x@cluster0.dr1ml.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient("---MONGO DB URI---") #PLACE YOUR MONGO DB ATLAS URI HERE
 db = client.parkinson_db
 collection = db.predictions
 
